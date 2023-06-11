@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const HomeArea = styled.div`
+export const GoalsArea = styled.div`
     width: 100%;
     height: calc(100vh - 90px);
     background-color: #394867;
 `
 
-export const HomeContent = styled.div`
+export const GoalsContent = styled.div`
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -34,9 +34,6 @@ export const TableCalendar = styled.thead`
             opacity: 0.8;
         }
     }
-    .plus-icon{
-        margin-right: 20px;
-    }
 `
 export const Month = styled.tbody`
     color: #FFFFFF;
@@ -59,7 +56,7 @@ export const MainTable = styled.div`
     width: 100%;
     background-color: #EEEEEE;
     color: #394867;
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 10px;
     margin-top: 10px;
     display: flex;
@@ -68,6 +65,7 @@ export const MainTable = styled.div`
     margin-bottom: 20px;
 `
 export const TableTitle = styled.thead`
+    margin-top: 20px;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 10px;
@@ -108,49 +106,26 @@ export const TableData = styled.td`
         }
     }
 `
-
-export const OtherTables = styled.td`
-    height: 25vh;
-    display: flex;
-    justify-content: space-between;
+export const StatusArea = styled.td`
     width: 100%;
-    gap: 20px;
-    font-size: 14px;
-`
-
-export const TableTitle2 = styled.thead`
-    margin-top: 20px;
-    background-color: #EEEEEE;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
-`
-
-export const WalletTable = styled.td`
-    height: 300px; /* Altura fixa do contêiner */
-    overflow: auto; /* Adiciona rolagem às linhas */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(50%);
-    height: 100%;
-    background-color: #EEEEEE;
-    color: #394867;
-    border-radius: 10px;
-    padding: 0 20px;
-`
+    justify-content: center;
+    gap: 100px;
+    color: #FFFFFF;
 
-export const SummaryTable = styled.td`
-    height: 300px; /* Altura fixa do contêiner */
-    overflow: auto; /* Adiciona rolagem às linhas */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(50%);
-    height: 100%;
-    background-color: #EEEEEE;
-    color: #394867;
-    border-radius: 10px;
-    padding: 0 20px;
+    .status{
+        display: flex;
+    }
+    .icon{
+        width: 25px;
+        height: 15px;
+        border-radius: 10px;
+        margin-right: 8px;
+    }
+    .green{
+        background-color: #B2D8B1;
+    }
+    .red{
+        background-color: #FFC6C6;
+    }
 `

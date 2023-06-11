@@ -1,24 +1,26 @@
-import { HeaderContainer } from "./styles"
-import { Context } from "../../context/AuthContext"
-import { useContext } from "react"
-import { useNavigate } from "react-router-dom"
-import { clearStorage } from "../../localStorage"
+import { HeaderArea, HeaderContainer, LeftContent, MiddleContent, RightContent, MenuItem } from "./styles"
+import { Link } from "react-router-dom";
 
 export default () => {
-   // let navigate = useNavigate()
-   // const { userLS, setUserLS } = useContext(Context)
-
-   // const logout = () => {
-   //    clearStorage()
-   //    setUserLS(undefined)
-   //    navigate("/")
-   // }
-
    return (
-      <>
+      <HeaderArea>
          <HeaderContainer>
-            Header
+            <LeftContent>
+               Olá, Marcus
+            </LeftContent>
+            <MiddleContent>
+               GSmoney
+            </MiddleContent>
+            <RightContent>
+               <Link to='/'><MenuItem>INÍCIO</MenuItem></Link>
+               <Link to='/minhas-metas'>
+                  <MenuItem>MINHAS METAS</MenuItem>
+               </Link>
+               <Link to='/historico-anual'>
+                  <MenuItem>HISTÓRICO ANUAL</MenuItem>
+               </Link>
+            </RightContent>
          </HeaderContainer>
-      </>
+      </HeaderArea>
    )
 }
