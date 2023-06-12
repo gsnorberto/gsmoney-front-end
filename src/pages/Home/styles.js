@@ -139,6 +139,18 @@ export const WalletTable = styled.td`
     color: #394867;
     border-radius: 10px;
     padding: 0 20px;
+
+    .icon-area{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .icon{
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
 `
 
 export const SummaryTable = styled.td`
